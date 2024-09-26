@@ -1,0 +1,44 @@
+body{
+    background-image: url(patron.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    width: 50%;
+    background-color: aliceblue;
+    padding: 2%;
+    border-radius: 50px;
+    height: 600px;
+    text-align: center;
+}
+input{
+    padding: 9px;
+    width: 300px;
+}
+p{
+    font-size: 1.3rem;
+}
+button{
+    padding: 9px;
+    font-size: 1.1rem;
+    background-color: rgb(84, 171, 248);
+    border: 1px solid rgb(19, 111, 192);
+    color: aliceblue;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+.kelvin,
+.fahrenheit{
+    height: 50px ;
+    width: 50%;
+    margin: 0 auto;
+}
+.fahrenheit-text,
+.kelvin-text
+{
+    padding: 4px;
+    border-bottom: 2px solid rgb(19, 111, 192);
+    height: 30px;
+}

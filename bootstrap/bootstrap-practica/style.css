@@ -1,0 +1,31 @@
+.navbar-brand img{
+    width: 100px;
+}
+body{
+    background-color: #d7f5f6;
+}
+.navbar{
+    margin-top: 50px
+}
+.margin{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.good-news{
+    background-color: #fadc7c;
+    padding: 9px;
+}
+.card-formulario{
+    background-color: #fff;
+    padding: 18px;
+}
+.logos img{
+    width: 100%;
+}
+.ventajas{
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 27px;
+    margin-bottom: 100px;
+    font-size: 1.2rem;
+}
