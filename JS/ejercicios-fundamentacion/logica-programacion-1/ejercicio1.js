@@ -1,47 +1,22 @@
 const prompt = require('prompt-sync')();
 
-//create numbers and assigned
-// let number1 = parseInt(prompt("Type the first number: "))
-// let number2 = parseInt(prompt("Type the second number: "))
-// let number3 = parseInt(prompt("Type the third number: "))
-
-// if(number1 > number2){
-//     if(number2 > number3){
-//         console.log(`${number1} , ${number2} , ${number3}`);
-//     }else{
-//         console.log(`${number1} , ${number3} , ${number2}`);
-//     }
-// }else if (number2 > number1){
-//     if(number1 > number3){
-//         console.log(`${number2} , ${number1} , ${number3}`);
-//     }else{
-//         console.log(`${number2} , ${number3} , ${number1}`);
-//     }
-// } else{
-//     if(number2 > 1){
-//         console.log(`${number3} , ${number2} , ${number1}`);
-//     }else{
-//         console.log(`${number3} , ${number1} , ${number2}`);
-//     }
-// }
-
-console.log("ENTRY THREE NUMBERS")
+console.log("ENTRY THREE NUMBER");
 
 let arrayNumbers = [];
 
-for(let i = 1; i <= 3; i++){
-    arrayNumbers.push(parseInt(prompt('Type a number: ')));
+for (let i = 1; i <= 3; i++) {
+    let num = parseFloat(prompt('Type a number: '));
+    arrayNumbers.push(num);
 }
 
-let arrayIncrease = arrayNumbers.sort();
-let arrayDecrease = arrayNumbers.sort((a, b) => {
- if(a == b){
-    return 0;
- }
- if(a > b){
-    return -1;
- }
- return 1;
-});
-console.log(arrayIncrease);
-console.log(arrayDecrease);
+if (arrayNumbers[0] === arrayNumbers[1] && arrayNumbers[1] === arrayNumbers[2]) {
+    console.log("All three numbers are equal: " + arrayNumbers[0]);
+} else {
+    // Ordenar de < a > 
+    let arrayIncrease = [...arrayNumbers].sort((a, b) => a - b);
+    // Ordenar de > a <
+    let arrayDecrease = [...arrayNumbers].sort((a, b) => b - a);
+
+    console.log("Numbers sorted in ascending order: " + arrayIncrease.join(", "));
+    console.log("Numbers sorted in descending order: " + arrayDecrease.join(", "));
+}
